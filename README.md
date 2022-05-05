@@ -1,5 +1,5 @@
 # Depression Signs Detection with NLP
-A Machine Learning Approach to Detect Depression Signs in Social Media Text
+An Artificial Intelligence Approach to Detect Depression Signs in Social Media Text
 
 ## Introduction
 I have explored how AI algorithms can be applied to detect signs of depression from social media text in English. 
@@ -12,11 +12,11 @@ Furthermore, a website has been created with this best model, so that any indivi
 
 ## Content
 
-This respository contains the coding files used to develop the aforementioned model.
+This respository contains the files used to develop the aforementioned model.
 
 ### 1. Dataset
 
-The competition organizers offer three sets: train, development and test. However, as the _Label_ feature is only present in two of the three datasets, only the train and development sets can be used to build the predictive model. As the performance of the models could not be evaluated in the proposed test set, the development set acted as the test set, and the train set was divided into train and development itself, following a 70-30 stratified ratio.
+The competition organizers offer three datasets: train, development and test. However, as the _Label_ feature is only present in two of the three datasets, only the train and development sets can be used to build the predictive model. As the performance of the models could not be evaluated in the proposed test set, the development set acted as the test set, and the train set was divided into train and development itself, following a 70-30 stratified ratio.
 
 The dataset can be extracted from: https://competitions.codalab.org/competitions/36410#learn_the_details.
 
@@ -26,11 +26,11 @@ When building the competition datasets, the researchers performed a basic cleani
 
 As the datasets come from social media, a more profound cleaning was performed: all the text was converted to lowercase, the full expressions substituting abbreviations (e.g., don't → do not, it's → it is, he'll → he will) and unwanted characters were removed, including tags or mentions (e.g., @name), hashtags, weblinks, remaining emojis, punctuation, trailing whitespaces and stop words. Furthermore, all the text was tokenized and stemmed using Porter stemming.
 
-The xxx file contains the code needed to perform this cleaning.
+The 01_Data_Preprocessing.py file contains the code used to perform this cleaning.
 
 ### 2. Model
 
-The following sections have been included in the xxx file.
+The following sections have been included in the 02_Modeling file.
 
 #### 2.1. Feature Extraction
 
@@ -51,6 +51,8 @@ A random forest combines many decision trees to generate the final prediction by
 * Bootstrap: True
 * Out-of-bag samples: False
 * Warm start: False
+
+The trained model is uploaded to the repository under the name: TFIDF_ngrams_RandomForestClassifier.joblib
 
 ## References
 
