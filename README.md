@@ -26,11 +26,11 @@ When building the competition datasets, the researchers performed a basic cleani
 
 As the datasets come from social media, a more profound cleaning was performed: all the text was converted to lowercase, the full expressions substituting abbreviations (e.g., don't → do not, it's → it is, he'll → he will) and unwanted characters were removed, including tags or mentions (e.g., @name), hashtags, weblinks, remaining emojis, punctuation, trailing whitespaces and stop words. Furthermore, all the text was tokenized and stemmed using Porter stemming.
 
-The 01_Data_Preprocessing.py file contains the code used to perform this cleaning.
+The ``01_Data_Preprocessing.py`` file contains the code used to perform this cleaning.
 
 ### 2. Model
 
-The following sections have been included in the 02_Modeling file.
+The following sections have been included in the ``02_Modeling.py`` file.
 
 #### 2.1. Feature Extraction
 
@@ -52,7 +52,7 @@ A random forest combines many decision trees to generate the final prediction by
 * Out-of-bag samples: False
 * Warm start: False
 
-The trained model is uploaded to the repository under the name: TFIDF_ngrams_RandomForestClassifier.joblib
+The trained model is uploaded to the repository under the name: ``TFIDF_ngrams_RandomForestClassifier.joblib``
 
 ## References
 
