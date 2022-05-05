@@ -18,7 +18,7 @@ This respository contains the coding files used to develop the aforementioned mo
 
 The competition organizers offer three sets: train, development and test. However, as the _Label_ feature is only present in two of the three datasets, only the train and development sets can be used to build the predictive model. As the performance of the models could not be evaluated in the proposed test set, the development set acted as the test set, and the train set was divided into train and development itself, following a 70-30 stratified ratio.
 
-The dataset can be extracted on: https://competitions.codalab.org/competitions/36410#learn_the_details.
+The dataset can be extracted from: https://competitions.codalab.org/competitions/36410#learn_the_details.
 
 #### 1.1. Preprocessing
 
