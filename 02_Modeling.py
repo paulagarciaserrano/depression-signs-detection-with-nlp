@@ -11,8 +11,8 @@ from sklearn.ensemble import RandomForestClassifier
 from joblib import dump
 
 # Read the normalized datasets
-train = pd.read_csv('normalized_trainset.csv') # change the route to your train file
-val = pd.read_csv('normalized_devset.csv') # change the route to your validation file
+train = pd.read_csv('normalized_trainset.csv') # change the route to your normalized train file
+val = pd.read_csv('normalized_devset.csv') # change the route to your normalized validation file
 
 # Split the data
 X = train['normalized_text'].copy()
